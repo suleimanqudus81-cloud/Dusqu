@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIM | Report Incident</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="brand">Security Incident Mapping System</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="report.html">Report</a>
+          <a href="emegency.html">Emergency</a>
+          <a href="tips.html">Safety Tips</a>
+          <a href="statistics.html">Statistics</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contant.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Submit a Security Incident Report</h1>
+        <p>Use this form to report any security-related incident in or around the university community.</p>
+      </section>
+
+      <section>
+        <h2>Personal Information</h2>
+        <form>
+          <div class="grid">
+            <div>
+              <label for="name">Full Name</label>
+              <input id="name" type="text" placeholder="Enter your name" />
+            </div>
+            <div>
+              <label for="email">Email Address</label>
+              <input id="email" type="email" placeholder="Enter your email" />
+            </div>
+          </div>
+          <div class="grid">
+            <div>
+              <label for="phone">Phone Number</label>
+              <input id="phone" type="tel" placeholder="Enter phone number" />
+            </div>
+            <div>
+              <label for="occupation">Occupation</label>
+              <input id="occupation" type="text" placeholder="Student, Staff, Visitor" />
+            </div>
+          </div>
+          <div class="grid">
+            <div>
+              <label for="faculty">Faculty</label>
+              <input id="faculty" type="text" placeholder="Faculty name" />
+            </div>
+            <div>
+              <label for="department">Department</label>
+              <input id="department" type="text" placeholder="Department name" />
+            </div>
+          </div>
+          <div>
+            <label for="matric">Matric Number (if applicable)</label>
+            <input id="matric" type="text" placeholder="Enter matric number" />
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <h2>Incident Information</h2>
+        <form>
+          <div class="grid">
+            <div>
+              <label for="type">Incident Type</label>
+              <select id="type">
+                <option>Theft</option>
+                <option>Robbery</option>
+                <option>Assault</option>
+                <option>Fire Outbreak</option>
+                <option>Suspicious Activity</option>
+                <option>Vandalism</option>
+                <option>Missing Person</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="date">Incident Date</label>
+              <input id="date" type="date" />
+            </div>
+          </div>
+          <div class="grid">
+            <div>
+              <label for="time">Incident Time</label>
+              <input id="time" type="time" />
+            </div>
+            <div>
+              <label for="location">Incident Location</label>
+              <input id="location" type="text" placeholder="Where did it happen?" />
+            </div>
+          </div>
+          <div class="grid">
+            <div>
+              <label for="severity">Severity Level</label>
+              <select id="severity">
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+              </select>
+            </div>
+            <div>
+              <label for="people">Number of People Involved</label>
+              <input id="people" type="number" min="1" value="1" />
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <h2>Describe the Incident</h2>
+        <textarea placeholder="Provide a clear description of what happened..."></textarea>
+      </section>
+
+      <section>
+        <h2>Upload Evidence</h2>
+        <input type="file" />
+      </section>
+
+      <section>
+        <h2>Privacy Statement</h2>
+        <p>All reports remain confidential and are only accessible to authorized university security officials.</p>
+        <button type="submit">Submit Report</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>Security Incident Mapping System © 2026</p>
+    </footer>
+  </body>
+</html>
+
+
